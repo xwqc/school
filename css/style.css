@@ -209,22 +209,23 @@ a, button {
 	/*background-color: #444;*/ /* or #9cadb1*/
 	/*background-color: #87cefa;*/ /* or #7ab8cc or #57aed1*/
 	background-color: #87cefa;
-	padding: 10px;
-	border-radius: 4px;
+	/*padding: 10px;*/
+	width: 120px; /* 下拉菜单的宽度 */
+	/*border-radius: 4px;*/
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 	z-index: 1;
 }
 
 .menu-options a {
 	display: block;
-	color: #000000;
+	color: #4d1f00;
 	text-decoration: none;
 	text-align: left;
+	font-weight:bold;
+	width:100%;
 	padding: 10px 15px;
+	border-bottom: 1px solid #FFF;
 	transition: background-color 0.3s ease;
-	width: 100px; /* 下拉菜单的宽度 */
-	/*max-height: 300px; 
-	overflow-y: auto; */
 }
 
 .menu-options a:hover {
@@ -484,6 +485,12 @@ a, button {
 	width: 90%;
 	border-radius: 5px;
 }
+.side-image{ 
+	width: 600px;
+	@media screen and (max-width: 600px) {
+	width: 100%;
+	}
+}
 .sideImage {
 	transform: translateX(100px);
 	opacity: 0;
@@ -531,7 +538,6 @@ a, button {
 	border: 1px solid #FA4B37;
 	font-size: 15px;
 	color: #272529;
-	/*font-family: cursive;*/
 	text-decoration: none;
 }
 .cbox .det a:hover {
@@ -544,6 +550,7 @@ a, button {
 .cbox img {
 	width: 20px;
 	margin-right: 20px;
+	transform: translateY(3px);
 }
 
 .tbox {
@@ -555,12 +562,14 @@ a, button {
 
 /*TEAM SECTION*/
 .totalcard {
-	width: 100%;
+	/*width: 100%;*/
+	max-width:1700px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 50px;
+	margin: 0 auto;
 }
 .totalcard .card {
 	margin: 50px;
